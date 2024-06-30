@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-style {
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+#create-btn {
+    font-size: 20px;
+}
+
+button {
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 8px;
+    margin-right: 10px;
+    margin-top: 10px;
+}

@@ -7,6 +7,9 @@ urlpatterns = [
     path('users/', views.UserView.as_view(), name="UserView"),
     path('users/<int:id>', views.showUserDetails, name="UserDetails" ),
     path('services/', views.ServiceView.as_view(), name='ServiceView'),
-    path('services/<str:type>', views.showServiceDetails, name="ServiceDetails")
+    path('services/<str:type>', views.showServiceDetails, name="ServiceDetails"),
+    path('create/', views.createSubscription, name="createSub"),
+    path('subscription/', views.SubscriptionCreateView.as_view(), name="SubscriptionPage")
+    
 
 ]
