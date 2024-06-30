@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Details</title>
+    <link rel="stylesheet" href="{% static "css/users.css" %}">
+</head>
+<body>
+    <h1>Service Details</h1>
+    <div>
+        <table>
+            <thead>
+                <th>Service Name</th>
+                <th>Payment Method</th>
+                <th>Company</th>
+                <th>Users Subscribed</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{service.get_type_display}}</td>
+                    <td>{{service.get_mode_display}}</td>
+                    <td>{{service.company}}</td>
+                    <td>
+                        <ul>
+                            {% for user in users %}
+                                <li>{{user.name}}</li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

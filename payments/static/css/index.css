@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.user-style, .service-style {
+    box-shadow: 1px 1px 10px black;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+button {
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 8px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
